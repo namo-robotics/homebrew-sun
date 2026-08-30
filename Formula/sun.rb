@@ -7,8 +7,8 @@ class Sun < Formula
   desc "Compiled language with Rust-style memory safety and an LLVM backend"
   homepage "https://namo-robotics.github.io/sun/"
   url "https://github.com/namo-robotics/sun/releases/download/dev/sun-0.dev-arm64-apple-darwin.tar.gz"
-  version "0.dev.20260830052228"
-  sha256 "a3efb028546694b2ce28b5f479a5ed47bfe6758cf3f9f81431b3bcc47548a3ba"
+  version "0.dev.20260830073153"
+  sha256 "835bf58843537f20ad4922503c668f377056231ca954fb459ebf8a70c757bcd5"
   license "MIT"
 
   # The compiler is a prebuilt Apple Silicon binary. Its only non-system
@@ -33,7 +33,7 @@ class Sun < Formula
       #{lib}/sun. Import them from a program's manifest:
 
           manifest {
-              moons: ["stdlib.moon", "tls.moon"]
+              libraries: ["stdlib.moon", "tls.moon"]
           }
     EOS
   end
@@ -42,7 +42,7 @@ class Sun < Formula
   # together prove the compiler finds its bundles and can link through cc.
   test do
     (testpath/"hello.sun").write <<~SUN
-      using sun;
+      using std;
 
       function main() i32 {
           println("Hello from Sun!");
@@ -50,7 +50,7 @@ class Sun < Formula
       }
 
       manifest {
-          moons: ["stdlib.moon"]
+          libraries: ["stdlib.moon"]
       }
     SUN
     assert_match "Hello from Sun!", shell_output("#{bin}/sun hello.sun")
