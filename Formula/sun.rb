@@ -1,12 +1,13 @@
-# Template for the Homebrew formula published to the namo-robotics/homebrew-sun
-# tap. The Packages workflow fills in the url, version and checksum below for
-# the build it just published and pushes the result to the tap, so the formula
-# always names the newest download. Edit this file, not the copy in the tap.
+# The Homebrew formula for the Sun compiler. It is generated: the Packages
+# workflow in namo-robotics/sun renders this from homebrew/sun.rb.in with the
+# url, version and checksum of the build it just published, then pushes the
+# result to the namo-robotics/homebrew-sun tap. So the formula always names
+# the newest download, and changes belong in the template.
 class Sun < Formula
   desc "Compiled language with Rust-style memory safety and an LLVM backend"
   homepage "https://namo-robotics.github.io/sun/"
   url "https://github.com/namo-robotics/sun/releases/download/dev/sun-0.dev-arm64-apple-darwin.tar.gz"
-  version "0.dev.20260830025850"
+  version "0.dev.20260830030705"
   sha256 "9c432a9e41989fe9104c9ccbcd6bb870397cdaa62eed0c8f64d6dc87ca7bcabd"
   license "MIT"
 
