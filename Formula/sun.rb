@@ -7,8 +7,8 @@ class Sun < Formula
   desc "Compiled language with Rust-style memory safety and an LLVM backend"
   homepage "https://namo-robotics.github.io/sun/"
   url "https://github.com/namo-robotics/sun/releases/download/dev/sun-0.dev-arm64-apple-darwin.tar.gz"
-  version "0.dev.20260910082708"
-  sha256 "2b491d73ffced4a77057715058b9cacef1ca53e8f86c663f010abdf6535fe15d"
+  version "0.dev.20260910122630"
+  sha256 "5f81219fe7a28a744269be40bbb79ea910eefe2a1d0ddeea4be3b7797d6df7bf"
   license "MIT"
 
   # The compiler is a prebuilt Apple Silicon binary. Its only non-system
