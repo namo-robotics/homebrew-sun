@@ -7,14 +7,14 @@ class Sun < Formula
   desc "Compiled language with Rust-style memory safety and an LLVM backend"
   homepage "https://namo-robotics.github.io/sun/"
   url "https://github.com/namo-robotics/sun/releases/download/dev/sun-0.dev-arm64-apple-darwin.tar.gz"
-  version "0.dev.20260925230106"
-  sha256 "a65c92373081c8140d6ed7b3cdc4abacc8c89f41c04250f9c30d7735c087d6d2"
+  version "0.dev.20260926215935"
+  sha256 "c6f64f039fa26d8b51b5a7b9d7eb82f5100e5c73114130a306cddb1ca370ea53"
   license "MIT"
 
-  # The compiler is a prebuilt Apple Silicon binary. Its only non-system
-  # dependency is Homebrew's libLLVM.dylib, which it loads by absolute path
-  # from llvm@20's opt prefix.
+  # The compiler is a prebuilt Apple Silicon binary. Its non-system
+  # dependencies include LLVM and libarchive from Homebrew.
   depends_on "llvm@20"
+  depends_on "libarchive"
   depends_on arch: :arm64
   depends_on :macos
 
