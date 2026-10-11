@@ -7,8 +7,8 @@ class Sun < Formula
   desc "Compiled language with Rust-style memory safety and an LLVM backend"
   homepage "https://namo-robotics.github.io/sun/"
   url "https://github.com/namo-robotics/sun/releases/download/dev/sun-0.dev-arm64-apple-darwin.tar.gz"
-  version "0.dev.20261011114507"
-  sha256 "084afcf01fb9d4d33bef3c43ce3090ad5ff26b1a4ced99470cd253e006249b61"
+  version "0.dev.20261011130104"
+  sha256 "f01f28c236ddd28e65b31b5889fdab48549a6ebb6394856cb576fa0810f1c051"
   license "MIT"
 
   # The compiler is a prebuilt Apple Silicon binary. Its non-system
@@ -24,7 +24,7 @@ class Sun < Formula
     # relative to its own binary, so a Cellar install finds these with no
     # SUN_PATH set.
     (lib/"sun").install Dir["lib/sun/*.moon"]
-    (share/"sun/stdlib").install Dir["share/sun/stdlib/*.sun"]
+    (share/"sun/stdlib").install Dir["share/sun/stdlib/*"]
   end
 
   def caveats
