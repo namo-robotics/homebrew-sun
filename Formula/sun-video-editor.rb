@@ -2,9 +2,9 @@
 class SunVideoEditor < Formula
   desc "Convert, compress, and trim local videos"
   homepage "https://github.com/namo-robotics/sun_video_editor"
-  url "https://github.com/namo-robotics/sun_video_editor/releases/download/dev/sun-video-editor-93f0baf69a05aa251dc7f0cac53a2b2f02610b2c-arm64-apple-darwin.tar.gz"
-  version "0.1.0.dev.26"
-  sha256 "45fdbedd7b69ef8cdb84204062c740b08b1065a128a296770ca27ce1f019c51e"
+  url "https://github.com/namo-robotics/sun_video_editor/releases/download/dev/sun-video-editor-20b2f74ee4881bb5cc7ddaec770df435180279fb-arm64-apple-darwin.tar.gz"
+  version "0.1.0.dev.27"
+  sha256 "85be02f012f6985c0941d1420789c24b89e8c586e053a54d22af4e9ac172c553"
   license "MIT"
 
   depends_on macos: :tahoe
