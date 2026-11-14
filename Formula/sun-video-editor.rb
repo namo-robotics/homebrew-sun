@@ -4,7 +4,7 @@ class SunVideoEditor < Formula
   homepage "https://github.com/namo-robotics/sun_video_editor"
   url "https://github.com/namo-robotics/sun_video_editor/releases/download/dev/sun-video-editor-arm64-apple-darwin.tar.gz"
   version "0.1.0.dev.73"
-  sha256 "d962c464b185d6cb821ad547505737c0943df9e513d9f4cc6df4dd62fc217523"
+  sha256 "d6e1e414330e6cd8b7f55102ed5e7ed706ae6979702ade6190de0e94eb54e795"
   license "MIT"
 
   depends_on macos: :tahoe
